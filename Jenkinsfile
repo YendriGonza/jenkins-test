@@ -16,19 +16,29 @@ pipeline{
     }
     stages{
         stage('Clone'){
-            echo 'Cloning repository ...'
+            steps{
+                echo 'Cloning repository ...'
+            }
         }
         stage('Build'){
-            echo 'Building ...'
+             steps{
+                echo 'Building ...'
+             }
         }
         stage('Test'){
-            echo 'Testing...'
+             steps{
+                echo 'Testing...'
+             }
         }
         stage('Package'){
-            echo 'Packaging...'
+            steps{
+                echo 'Packaging...'
+            }
         }
         stage('Publish'){
-            echo 'Publishing...'
+            steps{
+                echo 'Publishing...'
+            }
         }
     }
 }
